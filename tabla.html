@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <img src="img/Logo.png" id="Logo" alt="Logo de Esperpéntico">
+        <img src="img/Logo.svg" id="Logo" alt="Logo de Esperpéntico">
         <h1 id="Titulo">Esperpéntico</h1>
 
         <nav>
@@ -24,7 +24,7 @@
                 </li>
 
                 <li>
-                    <a href="tabla.html">Películas</a>
+                    <a href="tabla.html " aria-current="page">Películas</a>
                 </li>
 
                 <li>
@@ -32,7 +32,7 @@
                 </li>
 
                 <li>
-                    <a href="formulario.html">Contacto</a>
+                    <a href="formulario.html">Formulario</a>
                 </li>
             </ul>
 
@@ -41,17 +41,162 @@
 
     <main>
         <section>
-            <h2> TABLA </h2>
+            <h2>Catálogo de películas españolas</h2>
 
+            <p>
+                En esta página encontrarás una selección de películas
+                destacadas del cine español. Recogemos información
+                sobre el título, el director, el año de estreno, el género
+                cinematográfico y la duración de cada película.
+            </p>
+
+            <p>
+                Las películas están agrupadas por género para facilitar
+                su consulta. La duración se expresa en minutos y los años
+                corresponden a su estreno original.
+            </p>
+        </section>
+
+        <section>
+            <h3>Listado de películas</h3>
+
+            <table>
+
+                <caption>
+                    <h4>Catálogo de películas destacadas del cine español</h4>
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Género</th>
+                        <th scope="col">Título</th>
+                        <th scope="col">Director</th>
+                        <th scope="col">Año</th>
+                        <th scope="col">Duración</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="rowgroup" rowspan="3">Drama</th>
+                        <td>Todo sobre mi madre</td>
+                        <td>Pedro Almodóvar</td>
+                        <td>1999</td>
+                        <td>101 min</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mar adentro</td>
+                        <td>Alejandro Amenábar</td>
+                        <td>2004</td>
+                        <td>125 min</td>
+                    </tr>
+
+                    <tr>
+                        <td>La lengua de las mariposas</td>
+                        <td>José Luis Cuerda</td>
+                        <td>1999</td>
+                        <td>97 min</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="rowgroup" rowspan="3">Comedia</th>
+                        <td>Ocho apellidos vascos</td>
+                        <td>Emilio Martínez-Lázaro</td>
+                        <td>2014</td>
+                        <td>98 min</td>
+                    </tr>
+
+                    <tr>
+                        <td>Bienvenido, Mister Marshall</td>
+                        <td>Luis García Berlanga</td>
+                        <td>1953</td>
+                        <td>78 min</td>
+                    </tr>
+
+                    <tr>
+                        <td>Campeones</td>
+                        <td>Javier Fesser</td>
+                        <td>2018</td>
+                        <td>124 min</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="rowgroup" rowspan="3">Thriller</th>
+                        <td>Tesis</td>
+                        <td>Alejandro Amenábar</td>
+                        <td>1996</td>
+                        <td>125 min</td>
+                    </tr>
+
+                    <tr>
+                        <td>La isla mínima</td>
+                        <td>Alberto Rodríguez</td>
+                        <td>2014</td>
+                        <td>105 min</td>
+                    </tr>
+
+                    <tr>
+                        <td>El cuerpo</td>
+                        <td>Oriol Paulo</td>
+                        <td>2012</td>
+                        <td>108 min</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="rowgroup" rowspan="2">Animación</th>
+                        <td>Las aventuras de Tadeo Jones</td>
+                        <td>Enrique Gato</td>
+                        <td>2012</td>
+                        <td>92 min</td>
+                    </tr>
+
+                    <tr>
+                        <td>Arrugas</td>
+                        <td>Ignacio Ferreras</td>
+                        <td>2011</td>
+                        <td>89 min</td>
+                    </tr>
+
+
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th scope="row" colspan="4">
+                            Duración media aproximada
+                        </th>
+                        <td>104 minutos</td>
+                    </tr>
+                </tfoot>
+
+            </table>
+        </section>
+
+        <section>
+            <h3>Conclusión</h3>
+
+            <p>
+                Este catálogo muestra la variedad del cine español,
+                con películas de diferentes épocas y géneros.
+                Podemos observar que el drama, la comedia, el thriller
+                y la animación han tenido una presencia importante
+                en nuestra cinematografía.
+            </p>
+
+            <p>
+                La tabla permite comparar fácilmente los años de estreno,
+                los directores y la duración de las películas.
+            </p>
         </section>
 
     </main>
 
-
-
     <footer>
-
-
+        <h2>Esperpéntico</h2>
+        <adress>Autor: Jerónimo Mejía </adress>
+        <p>Curso: 1 DAM A</p>
+        <p>Año: <time>2026</time></p>
     </footer>
 </body>
 
