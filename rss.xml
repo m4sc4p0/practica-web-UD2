@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Esperpéntico</title>
+        <link>https://github.com/m4sc4p0/practica-web-UD2</link>
+        <description>Blog
+            dedicado al cine español, su historia, sus películas más representativas, sus géneros y
+            sus
+            protagonistas.
+        </description>
+        <language>
+            es</language>
+        <item>
+            <title>EL CINE ESPAÑOL</title>
+            <link>https://github.com/m4sc4p0/practica-web-UD2/blob/main/index.html</link>
+            <guid>https://github.com/m4sc4p0/practica-web-UD2/blob/main/index.html</guid>
+            <pubDate>Wed, 11 Nov 2026 10:00:00 +0100</pubDate>
+            <description>Página principal de Esperpéntico, un sitio web dedicado al cine español y a
+                sus películas, directores y protagonistas más destacados.</description>
+        </item>
+        <item>
+            <title>La evolución del cine español</title>
+            <link>https://github.com/m4sc4p0/practica-web-UD2/blob/main/blog.html</link>
+            <guid>https://github.com/m4sc4p0/practica-web-UD2/blob/main/blog.html</guid>
+            <pubDate>Wed, 11 Nov 2026 10:00:00 +0100</pubDate>
+            <description>Resumen breve del segundo contenido.</description>
+        </item>
+        <item>
+            <title>Catálogo de películas españolas</title>
+            <link>https://github.com/m4sc4p0/practica-web-UD2/blob/main/tabla.html</link>
+            <guid>https://github.com/m4sc4p0/practica-web-UD2/blob/main/tabla.html</guid>
+            <pubDate>Wed, 11 Nov 2026 10:00:00 +0100</pubDate>
+            <description>Resumen breve del tercer contenido.</description>
+        </item>
+        <item>
+            <title>Galería audiovisual del cine español</title>
+            <link>https://github.com/m4sc4p0/practica-web-UD2/blob/main/galeria.html</link>
+            <guid>https://github.com/m4sc4p0/practica-web-UD2/blob/main/galeria.html</guid>
+            <pubDate>Wed, 11 Nov 2026 10:00:00 +0100</pubDate>
+            <description>Galería de imágenes, carteles de películas, vídeos y audios relacionados
+                con el cine español.</description>
+        </item>
+        <item>
+            <title>Formulario de participación</title>
+            <link>https://github.com/m4sc4p0/practica-web-UD2/blob/main/formulario.html</link>
+            <guid>https://github.com/m4sc4p0/practica-web-UD2/blob/main/formulario.html</guid>
+            <pubDate>Wed, 11 Nov 2026 10:00:00 +0100</pubDate>
+            <description>Formulario para que los visitantes compartan sus preferencias
+                cinematográficas, películas favoritas y opiniones sobre el cine español.
+            </description>
+        </item>
+    </channel>
+</rss>
