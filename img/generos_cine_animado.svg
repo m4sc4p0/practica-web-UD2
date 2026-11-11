@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title id="title">Géneros cinematográficos: drama, comedia y thriller</title>
+  <desc id="desc">Tríptico minimalista con tres segmentos animados, uno para cada género cinematográfico.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #fff8e9; font-weight: 700; letter-spacing: 5px; }
+    .panel { transform-box: fill-box; transform-origin: center; animation: reveal 1s ease-out both; }
+    .p2 { animation-delay: .18s; } .p3 { animation-delay: .36s; }
+    .symbol { transform-box: fill-box; transform-origin: center; animation: float 3s ease-in-out infinite; }
+    .p2 .symbol { animation-delay: .5s; } .p3 .symbol { animation-delay: 1s; }
+    .line { stroke: #fff8e9; stroke-width: 4; stroke-linecap: round; stroke-dasharray: 150; stroke-dashoffset: 150; animation: draw 1.2s .7s ease forwards; }
+    @keyframes reveal { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation: none !important; } .line { stroke-dashoffset: 0; } }
+  </style>
+  <rect width="400" height="600" fill="#9f2028"/>
+  <rect x="400" width="400" height="600" fill="#f2b928"/>
+  <rect x="800" width="400" height="600" fill="#191919"/>
+  <path d="M400 0V600 M800 0V600" stroke="#fff8e9" stroke-width="5"/>
+
+  <g class="panel p1">
+    <g class="symbol" fill="#fff8e9">
+      <path d="M92 188 Q150 155 212 184 L202 310 Q151 354 103 311Z"/>
+      <path d="M218 184 Q280 155 340 188 L329 311 Q279 354 229 310Z"/>
+      <path d="M120 232 Q140 250 160 232 M174 232 Q190 250 204 232" fill="none" stroke="#9f2028" stroke-width="9" stroke-linecap="round"/>
+      <path d="M125 285 Q160 252 194 285" fill="none" stroke="#9f2028" stroke-width="10" stroke-linecap="round"/>
+      <path d="M244 235 Q260 220 276 235 M295 235 Q310 220 326 235" fill="none" stroke="#9f2028" stroke-width="9" stroke-linecap="round"/>
+      <path d="M245 280 Q284 315 325 280" fill="none" stroke="#9f2028" stroke-width="10" stroke-linecap="round"/>
+    </g>
+    <text x="200" y="440" text-anchor="middle" font-size="48">DRAMA</text>
+    <path class="line" d="M145 470H255"/>
+  </g>
+
+  <g class="panel p2">
+    <g class="symbol">
+      <path d="M600 175 C535 175 505 205 510 260 C515 330 555 365 600 375 C645 365 685 330 690 260 C695 205 665 175 600 175Z" fill="#fff8e9"/>
+      <path d="M548 250 Q570 222 592 250 M608 250 Q630 222 652 250" fill="none" stroke="#f2b928" stroke-width="12" stroke-linecap="round"/>
+      <path d="M548 285 Q600 350 652 285 Q600 310 548 285Z" fill="#f2b928"/>
+      <path d="M480 250L450 235 M480 280L447 290 M720 250L750 235 M720 280L753 290" stroke="#fff8e9" stroke-width="8" stroke-linecap="round"/>
+    </g>
+    <text x="600" y="440" text-anchor="middle" font-size="48">COMEDIA</text>
+    <path class="line" d="M545 470H655"/>
+  </g>
+
+  <g class="panel p3">
+    <g class="symbol" fill="#fff8e9">
+      <path d="M875 235 L925 195 Q1000 165 1075 195 L1125 235 L1100 250 H900Z"/>
+      <path d="M930 250 Q1000 270 1070 250 L1055 278 Q1000 295 945 278Z"/>
+      <path d="M925 305 L875 365 H950 L975 320Z M1075 305 L1125 365 H1050 L1025 320Z"/>
+      <path d="M965 278 Q980 292 992 278 M1008 278 Q1020 292 1035 278" fill="none" stroke="#191919" stroke-width="7" stroke-linecap="round"/>
+    </g>
+    <text x="1000" y="440" text-anchor="middle" font-size="48">THRILLER</text>
+    <path class="line" d="M945 470H1055"/>
+  </g>
+</svg>

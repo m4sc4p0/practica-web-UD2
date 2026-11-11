@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="icon" href="img/favicon.png" type="image/svg+xml">
     <title>Galería - Esperpéntico</title>
 </head>
 
 <body>
     <header>
-        <img src="img/Logo.png" id="Logo" alt="Logo de Esperpéntico">
+        <img src="img/Logo.svg" id="Logo" alt="Logo de Esperpéntico">
         <h1 id="Titulo">Esperpéntico</h1>
 
         <nav>
@@ -28,11 +30,11 @@
                 </li>
 
                 <li>
-                    <a href="galeria.html">Galería</a>
+                    <a href="galeria.html" aria-current="page">Galería</a>
                 </li>
 
                 <li>
-                    <a href="formulario.html">Contacto</a>
+                    <a href="formulario.html">Formulario</a>
                 </li>
             </ul>
 
@@ -41,17 +43,223 @@
 
     <main>
         <section>
-            <h2> GALERÍA </h2>
+            <h2>Galería del cine español</h2>
 
+            <p>
+                En esta galería encontrarás una selección de carteles,
+                imágenes y escenas relacionadas con películas importantes
+                del cine español. También podrás conocer algunos recursos
+                audiovisuales de nuestra cinematografía.
+            </p>
+        </section>
+
+        <section>
+            <h2>Carteles de películas españolas</h2>
+            <!-- GALERIA -->
+
+            <figure>
+                <img src="img/galeria-todosobremimadrejpg.jpg" alt="Cartel de la película Todo sobre mi madre"
+                    width="300" height="450">
+                <figcaption>Todo sobre mi madre (1999)</figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/galeria-maradentro.jpg" alt="Cartel de la película Mar adentro" width="300" height="450"
+                    loading="lazy">
+                <figcaption>Mar adentro (2004)</figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/galeria-tesis.jpg" alt="Cartel de la película Tesis" width="300" height="450"
+                    loading="lazy">
+                <figcaption>Tesis (1996)</figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/galeria-campeones.jpg" alt="Cartel de la película Campeones" width="300" height="450"
+                    loading="lazy">
+                <figcaption>Campeones (2018)</figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/galeria-8apellidos.jpg" alt="Cartel de Ocho apellidos vascos" width="300" height="450"
+                    loading="lazy">
+                <figcaption>Ocho apellidos vascos (2014)</figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/galeria-laislaminima.jpg" alt="Cartel de la película La isla mínima" width="300"
+                    height="450" loading="lazy">
+                <figcaption>La isla mínima (2014)</figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/galeria-volver.jpg" alt="Cartel de la película Volver" width="300" height="450"
+                    loading="lazy">
+                <figcaption>Volver (2006)</figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/galeria-labolanegra.jpg" alt="Cartel de la película La Bola Negra" width="300"
+                    height="450" loading="lazy">
+                <figcaption>La Bola Negra (2026)</figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/galeria-tadeojones.jpg" alt="Cartel de Las aventuras de Tadeo Jones" width="300"
+                    height="450" loading="lazy">
+                <figcaption>Las aventuras de Tadeo Jones (2012)</figcaption>
+            </figure>
+
+
+        </section>
+
+        <!-- MAPA -->
+
+        <section>
+            <h2>Explora los géneros cinematográficos</h2>
+
+            <p>
+                Selecciona una de las tres zonas de la imagen para consultar
+                información sobre cada género.
+            </p>
+
+            <img src="img/generos_cine_animado.svg" alt="Imagen dividida en tres zonas: drama, comedia y thriller"
+                usemap="#generos" width="600" height="300">
+
+            <map name="generos">
+
+                <area shape="rect" coords="0,0,200,300" href="#drama" alt="Ir al género drama"
+                    title="Películas de drama">
+
+                <area shape="rect" coords="200,0,400,300" href="#comedia" alt="Ir al género comedia"
+                    title="Películas de comedia">
+
+                <area shape="rect" coords="400,0,600,300" href="#thriller" alt="Ir al género thriller"
+                    title="Películas de thriller">
+
+            </map>
+
+            <h3 id="drama">Drama</h3>
+            <p>Historias que exploran emociones y conflictos humanos.</p>
+
+            <h3 id="comedia">Comedia</h3>
+            <p>Películas que buscan entretener y provocar humor.</p>
+
+            <h3 id="thriller">Thriller</h3>
+            <p>Historias de suspense, misterio y tensión.</p>
+
+        </section>
+
+        <!-- VÍDEO LOCAL -->
+
+        <section>
+            <h2>Vídeo: historia del cine español</h2>
+
+            <p>
+                Este vídeo local puede contener un resumen audiovisual
+                de la evolución del cine español.
+            </p>
+
+            <video controls width="640" height="360" poster="img/video-poster.jpg"
+                alt="Tu navegador no puede reproducir este vídeo.">
+
+                <source src="video/videolocal.mp4" type="video/mp4">
+
+                <track label="Español" kind="subtitles" srclang="es" src="subtitulos/espanol.vtt" default>
+
+                <track label="Inglés" kind="subtitles" srclang="en" src="subtitulos/ingles.vtt">
+
+            </video>
+
+            <p>
+                El vídeo explica los principales momentos de la historia
+                del cine español. Si no se reproduce, comprueba que el
+                archivo MP4 está guardado en la carpeta videos.
+            </p>
+        </section>
+
+        <!-- AUDIO LOCAL -->
+
+        <section>
+            <h2>Audios cinematográficos</h2>
+
+            <h3>Banda sonora</h3>
+
+            <p>
+                Fragmento musical relacionado con el ambiente del cine.
+            </p>
+
+            <audio controls alt="Tu navegador no puede reproducir este audio.">
+                <source src="audio/bandasonora.mp3" type="audio/mpeg">
+            </audio>
+
+            <h3>Ambiente de una sala de cine</h3>
+
+            <p>
+                Audio con sonidos ambientales de una sala de cine,
+                como el público y el inicio de una proyección.
+            </p>
+
+            <audio controls alt="Tu navegador no puede reproducir este audio.">
+                <source src="audio/ambiente.mp3" type="audio/ogg">
+            </audio>
+
+        </section>
+
+        <!-- VÍDEO DE YOUTUBE -->
+
+        <section>
+            <h2>Vídeo externo sobre el cine español</h2>
+
+            <p>
+                Video sobre la historia del cine español.
+            </p>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/szOTGWTgEmc?si=bij6pSd4VF9l6dq_"
+                title="Vídeo de YouTube sobre el cine español" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+
+            <p>
+                <a href="https://youtu.be/szOTGWTgEmc?si=0d0Y9q0C4R1XLRNP" target="_blank">
+                    Visitar YouTube para ver el vídeo.
+                </a>
+            </p>
+        </section>
+
+        <!-- GOOGLE MAPS -->
+
+        <section>
+            <h2>Filmoteca Española</h2>
+
+            <p>
+                La Filmoteca Española conserva y difunde el patrimonio
+                cinematográfico. Puedes consultar su ubicación en el mapa.
+            </p>
+
+            <iframe src="https://maps.google.com/maps?q=Filmoteca%20Espa%C3%B1ola%20Madrid&output=embed" width="600"
+                height="450" title="Mapa de ubicación de la Filmoteca Española" loading="lazy">
+            </iframe>
+
+            <p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Filmoteca+Espa%C3%B1ola+Madrid"
+                    target="_blank">
+                    Abrir la ubicación en Google Maps.
+                </a>
+            </p>
         </section>
 
     </main>
 
-
+    </main>
 
     <footer>
-
-
+        <h2>Esperpéntico</h2>
+        <adress>Autor: Jerónimo Mejía </adress>
+        <p>Curso: 1 DAM A</p>
+        <p>Año: <time>2026</time></p>
     </footer>
 </body>
 
