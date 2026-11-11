@@ -11,6 +11,10 @@ footer {
     padding: 2px;
 }
 
+main {
+    padding: 2px;
+}
+
 footer p {
     font-weight: 700; 
 }
