@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #f5f5f5;
+}
+
+header,
+footer {
+    background-color: #0645ad;
+    color: #000000;
+    padding: 2px;
+}
+
+footer p {
+    font-weight: 700; 
+}
+nav a {
+    color: #f5f5f5;
+}
+
+img,
+video,
+iframe {
+    max-width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0.5rem;
+    border: 1px solid #333;
+}
+
+fieldset {
+    margin-bottom: 1rem;
+}
+
+#Logo {
+    width: 5%;
+}
+
+#Titulo {
+    width: fit-content;
+    margin-left: 1%;
+}
